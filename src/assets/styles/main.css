@@ -1,0 +1,7 @@
+@import "./font.css";
+@import "tailwindcss";
+
+
+@theme inline {
+  --font-cabinet-grotesk: 'CabinetGrotesk', sans-serif;
+}
