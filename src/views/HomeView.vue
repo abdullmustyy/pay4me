@@ -1,16 +1,25 @@
 <script setup lang="ts">
+import Across from '@/assets/images/webps/across.webp'
+import Ampower from '@/assets/images/webps/ampower.webp'
+import Monnify from '@/assets/images/webps/monnify.webp'
+import Paystack from '@/assets/images/webps/paystack.webp'
+import Prodigy from '@/assets/images/webps/prodigy.webp'
+import Providus from '@/assets/images/webps/providus.webp'
+import Stripe from '@/assets/images/webps/stripe.webp'
+import Techstars from '@/assets/images/webps/techstars.webp'
+
 import SparkleLeft from '@/components/icons/SparkleLeft.vue'
 import SparkleRight from '@/components/icons/SparkleRight.vue'
 
-const companies: Array<Record<'name' | 'logo', string>> = [
-  { name: 'across', logo: '/src/assets/images/webps/across.webp' },
-  { name: 'ampower', logo: '/src/assets/images/webps/ampower.webp' },
-  { name: 'prodigy', logo: '/src/assets/images/webps/prodigy.webp' },
-  { name: 'techstars', logo: '/src/assets/images/webps/techstars.webp' },
-  { name: 'stripe', logo: '/src/assets/images/webps/stripe.webp' },
-  { name: 'paystack', logo: '/src/assets/images/webps/paystack.webp' },
-  { name: 'providus', logo: '/src/assets/images/webps/prodigy.webp' },
-  { name: 'monnify', logo: '/src/assets/images/webps/monnify.webp' },
+const companies = [
+  { name: 'across', logo: Across },
+  { name: 'ampower', logo: Ampower },
+  { name: 'prodigy', logo: Prodigy },
+  { name: 'techstars', logo: Techstars },
+  { name: 'stripe', logo: Stripe },
+  { name: 'paystack', logo: Paystack },
+  { name: 'providus', logo: Providus },
+  { name: 'monnify', logo: Monnify },
 ]
 </script>
 
@@ -46,13 +55,13 @@ const companies: Array<Record<'name' | 'logo', string>> = [
     </div>
 
     <div class="w-fit place-self-center relative flex items-center gap-2">
-      <img src="/src/assets/images/webps/mobile-home-mockup.webp" alt="" />
-      <img src="/src/assets/images/webps/mobile-payment-mockup.webp" alt="" />
+      <img src="@/assets/images/webps/mobile-home-mockup.webp" alt="" />
+      <img src="@/assets/images/webps/mobile-payment-mockup.webp" alt="" />
       <div
         class="flex items-center bg-yellow-green border-2 border-primary shadow-[0_5.66px_5.66px_black] pl-4 pr-3 absolute bottom-10 right-0 translate-x-4/5 h-12.5"
       >
         <span class="text-lg">Backed by</span>
-        <img src="/src/assets/images/webps/techstars-transparent.webp" alt="" />
+        <img src="@/assets/images/webps/techstars-transparent.webp" alt="" />
       </div>
     </div>
 
@@ -65,7 +74,11 @@ const companies: Array<Record<'name' | 'logo', string>> = [
       <div class="flex items-center justify-center gap-8 flex-wrap">
         <img :src="logo" v-for="{ name, logo } in companies" :key="name" class="basis-1/8" />
       </div>
-      <RouterLink to="" class="mt-8 text-center text-primary text-2xl font-bold underline underline-offset-2">See More Partners</RouterLink>
+      <RouterLink
+        to=""
+        class="mt-8 text-center text-primary text-2xl font-bold underline underline-offset-2"
+        >See More Partners</RouterLink
+      >
     </div>
   </header>
 
