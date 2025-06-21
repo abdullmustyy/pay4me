@@ -3,15 +3,17 @@ import Chiamaka from '@/assets/images/webps/chiamaka.webp'
 import Musa from '@/assets/images/webps/musa.webp'
 import Obafemi from '@/assets/images/webps/obafemi.webp'
 import Precious from '@/assets/images/webps/precious.webp'
-import SparkleLeft from '@/components/icons/SparkleLeft.vue'
-import SparkleRight from '@/components/icons/SparkleRight.vue'
+import SectionHeading from '@/components/SectionHeading.vue'
 import StoreBadge from '@/components/StoreBadge.vue'
 import StudentFrame from '@/components/StudentFrame.vue'
+import WhyCard from '@/components/WhyCard.vue'
 import { companies } from '@/lib/constants'
 </script>
 
 <template>
-  <header class="grid gap-16 pt-8 pb-10">
+  <header
+    class="bg-[url(@/assets/images/webps/line-1.webp),url(@/assets/images/webps/line-2.webp)] bg-no-repeat bg-position-[top_right,left_60%] grid gap-16 pt-8 pb-10"
+  >
     <div
       class="bg-yellow-green/16 w-fit mx-auto rounded-2xl flex items-center gap-3.5 h-12 px-5 py-4 border border-primary border-dashed"
     >
@@ -53,11 +55,7 @@ import { companies } from '@/lib/constants'
     </div>
 
     <div class="w-4/5 place-self-center grid mt-4">
-      <div class="flex items-center justify-center gap-2 mb-6">
-        <SparkleLeft />
-        <h2 class="text-5xl font-bold">In Good Company</h2>
-        <SparkleRight />
-      </div>
+      <SectionHeading heading="In Good Company" />
       <div class="flex items-center justify-center gap-8 flex-wrap">
         <img :src="logo" v-for="{ name, logo } in companies" :key="name" class="basis-1/8" />
       </div>
@@ -104,6 +102,82 @@ import { companies } from '@/lib/constants'
           <StudentFrame student-name="Chiamaka Chike">
             <img :src="Chiamaka" alt="" />
           </StudentFrame>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[url(@/assets/images/pngs/line-3.png),url(@/assets/images/pngs/line-4.png)] bg-no-repeat bg-position-[100%_-20%,left_60%] grid gap-16 px-12 py-16">
+      <SectionHeading heading="Why We Built the Pay4me App" />
+
+      <div class="flex gap-4">
+        <div class="flex-2/5">
+          <WhyCard
+            heading="To Facilitate Global Education Payments"
+            description="Pay4Me empowers international students to easily fund their educational pursuits by offering a diverse range of payment options, including visa fees, tuition, and other essential educational expenses."
+            class="bg-zest-yellow/10 rounded-none rounded-t-4xl px-4 gap-8 h-full"
+          >
+            <figure class="size-full">
+              <img src="/src/assets/images/pngs/iphone-14-pro.png" alt="" class="size-full" />
+            </figure>
+          </WhyCard>
+        </div>
+
+        <div class="flex-3/10 flex flex-col space-y-4">
+          <WhyCard
+            heading="To Foster Financial Inclusion"
+            description="Pay4Me App makes international payments more accessible to individuals who may not have access to traditional banking services."
+            class="bg-tangerine/10 gap-8 min-h-fit"
+          >
+            <figure>
+              <img src="/src/assets/images/pngs/tranfer.png" alt="" />
+            </figure>
+          </WhyCard>
+          <WhyCard
+            heading="Bridging Geographical Boundaries"
+            description="Pay4Me app connects students and institutions across borders, enabling seamless payment flows regardless of location."
+            class="bg-pale-lime/10 h-full"
+          >
+            <div class="size-full relative flex items-center justify-center">
+              <img src="/src/assets/images/pngs/canada.png" alt="" class="absolute top-6 left-12" />
+              <img
+                src="/src/assets/images/pngs/britain.png"
+                alt=""
+                class="absolute top-6 right-14"
+              />
+              <img src="/src/assets/images/pngs/america.png" alt="" />
+              <img
+                src="/src/assets/images/pngs/sweden.png"
+                alt=""
+                class="absolute bottom-6 left-14"
+              />
+              <img
+                src="/src/assets/images/pngs/korea.png"
+                alt=""
+                class="absolute bottom-8 right-20"
+              />
+            </div>
+          </WhyCard>
+        </div>
+
+        <div class="flex-3/10 space-y-4">
+          <WhyCard
+            heading="To Improve Convenience and Accessibility"
+            description="Pay4Me App provides access to payment services anytime, anywhere, making it convenient for users across different time zones."
+            class="bg-spring-green/10"
+          >
+            <figure class="ml-auto">
+              <img src="/src/assets/images/pngs/atom.png" alt="" />
+            </figure>
+          </WhyCard>
+          <WhyCard
+            heading="To enhance security and trust"
+            description="Pay4Me app prioritizes user security by integrating with industry-leading payment gateways like Stripe and PayPal. These gateways employ robust security measures, including encryption, tokenization, and sophisticated fraud detection systems."
+            class="bg-creame-white"
+          >
+            <figure class="ml-auto">
+              <img src="/src/assets/images/pngs/padlock.png" alt="" />
+            </figure>
+          </WhyCard>
         </div>
       </div>
     </section>

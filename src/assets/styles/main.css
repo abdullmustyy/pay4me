@@ -8,6 +8,11 @@
   --icy-blue: #F9FAFF;
   --yellow-green: #AFE274;
   --steel-gray: #A6A6A6;
+  --zest-yellow: #ECE852;
+  --tangerine: #F56C2C;
+  --spring-green: #29DA6B;
+  --creame-white: #F9F8EE;
+  --pale-lime: #E3F0AF;
 
   --ease-1: cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -19,6 +24,11 @@
   --color-icy-blue: var(--icy-blue);
   --color-yellow-green: var(--yellow-green);
   --color-steel-gray: var(--steel-gray);
+  --color-zest-yellow: var(--zest-yellow);
+  --color-tangerine: var(--tangerine);
+  --color-spring-green: var(--spring-green);
+  --color-creame-white: var(--creame-white);
+  --color-pale-lime: var(--pale-lime);
 
   --ease-1: var(--ease-1);
 
