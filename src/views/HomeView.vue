@@ -1,26 +1,13 @@
 <script setup lang="ts">
-import Across from '@/assets/images/webps/across.webp'
-import Ampower from '@/assets/images/webps/ampower.webp'
-import Monnify from '@/assets/images/webps/monnify.webp'
-import Paystack from '@/assets/images/webps/paystack.webp'
-import Prodigy from '@/assets/images/webps/prodigy.webp'
-import Providus from '@/assets/images/webps/providus.webp'
-import Stripe from '@/assets/images/webps/stripe.webp'
-import Techstars from '@/assets/images/webps/techstars.webp'
-
+import Chiamaka from '@/assets/images/webps/chiamaka.webp'
+import Musa from '@/assets/images/webps/musa.webp'
+import Obafemi from '@/assets/images/webps/obafemi.webp'
+import Precious from '@/assets/images/webps/precious.webp'
 import SparkleLeft from '@/components/icons/SparkleLeft.vue'
 import SparkleRight from '@/components/icons/SparkleRight.vue'
-
-const companies = [
-  { name: 'across', logo: Across },
-  { name: 'ampower', logo: Ampower },
-  { name: 'prodigy', logo: Prodigy },
-  { name: 'techstars', logo: Techstars },
-  { name: 'stripe', logo: Stripe },
-  { name: 'paystack', logo: Paystack },
-  { name: 'providus', logo: Providus },
-  { name: 'monnify', logo: Monnify },
-]
+import StoreBadge from '@/components/StoreBadge.vue'
+import StudentFrame from '@/components/StudentFrame.vue'
+import { companies } from '@/lib/constants'
 </script>
 
 <template>
@@ -82,5 +69,43 @@ const companies = [
     </div>
   </header>
 
-  <main></main>
+  <main>
+    <section class="grid gap-16 bg-white px-12 py-16">
+      <div class="flex justify-center gap-2">
+        <img src="/src/assets/images/webps/globe-bg.webp" alt="" class="self-start" />
+        <h2 class="text-5xl font-bold">
+          Trusted by thousands of students<br />
+          and immigrants around the world
+        </h2>
+        <img src="/src/assets/images/webps/voltage-bg.webp" alt="" class="self-end" />
+      </div>
+
+      <div class="flex flex-col gap-12">
+        <div class="relative flex items-center justify-around">
+          <StudentFrame>
+            <img :src="Precious" alt="" />
+          </StudentFrame>
+          <div class="flex flex-col gap-5">
+            <StoreBadge store-name="google" class="z-10" />
+            <StoreBadge store-name="apple" class="z-10" />
+          </div>
+          <StudentFrame>
+            <img :src="Musa" alt="" />
+          </StudentFrame>
+          <div
+            class="absolute top-12 size-100 rounded-full bg-linear-[148.79deg,rgba(122,197,45,0.5)_12.9%,rgba(236,135,78,0.5)_29.15%,rgba(173,221,28,0.5)_41.54%,rgba(122,197,45,0.5)_54.7%,rgba(122,197,45,0.5)_70.18%,rgba(122,197,45,0.5)_87.21%] blur-[80px]"
+          />
+        </div>
+
+        <div class="flex items-center justify-around">
+          <StudentFrame>
+            <img :src="Obafemi" alt="" />
+          </StudentFrame>
+          <StudentFrame>
+            <img :src="Chiamaka" alt="" />
+          </StudentFrame>
+        </div>
+      </div>
+    </section>
+  </main>
 </template>

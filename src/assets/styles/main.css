@@ -7,6 +7,7 @@
   --accent: #E5C050;
   --icy-blue: #F9FAFF;
   --yellow-green: #AFE274;
+  --steel-gray: #A6A6A6;
 
   --ease-1: cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -17,6 +18,7 @@
   --color-accent: var(--accent);
   --color-icy-blue: var(--icy-blue);
   --color-yellow-green: var(--yellow-green);
+  --color-steel-gray: var(--steel-gray);
 
   --ease-1: var(--ease-1);
 
