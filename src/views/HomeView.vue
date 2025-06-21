@@ -82,14 +82,14 @@ import { companies } from '@/lib/constants'
 
       <div class="flex flex-col gap-12">
         <div class="relative flex items-center justify-around">
-          <StudentFrame>
+          <StudentFrame student-name="Precious Mike">
             <img :src="Precious" alt="" />
           </StudentFrame>
           <div class="flex flex-col gap-5">
             <StoreBadge store-name="google" class="z-10" />
             <StoreBadge store-name="apple" class="z-10" />
           </div>
-          <StudentFrame>
+          <StudentFrame student-name="Musa Ahmad">
             <img :src="Musa" alt="" />
           </StudentFrame>
           <div
@@ -98,10 +98,10 @@ import { companies } from '@/lib/constants'
         </div>
 
         <div class="flex items-center justify-around">
-          <StudentFrame>
+          <StudentFrame student-name="Obafemi Akinde">
             <img :src="Obafemi" alt="" />
           </StudentFrame>
-          <StudentFrame>
+          <StudentFrame student-name="Chiamaka Chike">
             <img :src="Chiamaka" alt="" />
           </StudentFrame>
         </div>

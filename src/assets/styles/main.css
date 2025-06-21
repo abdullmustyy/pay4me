@@ -27,12 +27,12 @@
 
 @layer base {
   body {
-    @apply bg-icy-blue text-foreground;
+    @apply bg-icy-blue text-foreground select-none;
   }
 
-  img {
+  /* img {
     @apply pointer-events-none;
-  }
+  } */
 }
 
 @utility before-hover-transform-link {
