@@ -1,3 +1,6 @@
+import Blog1 from '@/assets/images/pngs/blog-1.png'
+import Blog2 from '@/assets/images/pngs/blog-2.png'
+import Blog3 from '@/assets/images/pngs/blog-3.png'
 import Across from '@/assets/images/webps/across.webp'
 import Ampower from '@/assets/images/webps/ampower.webp'
 import Monnify from '@/assets/images/webps/monnify.webp'
@@ -33,7 +36,7 @@ export const blogs = [
     title: 'How to naviagate international payments for education without stress',
     intro:
       'Studying abroad can be an exciting journey, but it comes with its fair share of challenges—one of the biggest being...',
-    image: '/src/assets/images/pngs/blog-1.png',
+    image: Blog1,
     date: '19 dec 2024',
     author: 'Esther Ebere',
     link: '',
@@ -43,7 +46,7 @@ export const blogs = [
     title: '5 Tips for Finding the Best App for International Tuition Payments',
     intro:
       'Choosing the right app for international tuition payments can be daunting. With many options available, students often struggle...',
-    image: '/src/assets/images/pngs/blog-2.png',
+    image: Blog2,
     date: '11 dec 2024',
     author: 'Esther Ebere',
     link: '',
@@ -53,7 +56,7 @@ export const blogs = [
     title: "Why Universities Prefer Pay4Me App as their Africa's Payment Partner",
     intro:
       "Things fell apart for Adaobi Ekeh, a Nigerian student going to the United States of America for her master's in Artificial...",
-    image: '/src/assets/images/pngs/blog-3.png',
+    image: Blog3,
     date: '12 dec 2024',
     author: 'Ernest Emeka',
     link: '',

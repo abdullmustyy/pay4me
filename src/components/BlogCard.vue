@@ -15,7 +15,7 @@ defineProps<IBlogCardProps>()
 <template>
   <div class="bg-white">
     <div class="h-54"><img :src="image" alt="" class="size-full object-cover" /></div>
-    <div class="flex flex-col gap-4 px-8 py-4">
+    <div class="flex flex-col gap-4 px-10 py-6">
       <p class="text-sm text-cool-gray">{{ date }} | By {{ author }}</p>
       <h3 class="text-2xl">{{ title }}</h3>
       <hr class="border-cloud-gray" />
