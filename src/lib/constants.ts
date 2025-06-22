@@ -26,3 +26,36 @@ export const downloadSteps = [
   { id: 2, step: 'Download the official Pay4Me app from the App Store or Google Play Store.' },
   { id: 3, step: 'Open the Pay4Me app and create an account. Then you are ready to go!' },
 ]
+
+export const blogs = [
+  {
+    id: 1,
+    title: 'How to naviagate international payments for education without stress',
+    intro:
+      'Studying abroad can be an exciting journey, but it comes with its fair share of challenges—one of the biggest being...',
+    image: '/src/assets/images/pngs/blog-1.png',
+    date: '19 dec 2024',
+    author: 'Esther Ebere',
+    link: '',
+  },
+  {
+    id: 2,
+    title: '5 Tips for Finding the Best App for International Tuition Payments',
+    intro:
+      'Choosing the right app for international tuition payments can be daunting. With many options available, students often struggle...',
+    image: '/src/assets/images/pngs/blog-2.png',
+    date: '11 dec 2024',
+    author: 'Esther Ebere',
+    link: '',
+  },
+  {
+    id: 3,
+    title: "Why Universities Prefer Pay4Me App as their Africa's Payment Partner",
+    intro:
+      "Things fell apart for Adaobi Ekeh, a Nigerian student going to the United States of America for her master's in Artificial...",
+    image: '/src/assets/images/pngs/blog-3.png',
+    date: '12 dec 2024',
+    author: 'Ernest Emeka',
+    link: '',
+  },
+]

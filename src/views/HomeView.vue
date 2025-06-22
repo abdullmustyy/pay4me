@@ -3,11 +3,12 @@ import Chiamaka from '@/assets/images/webps/chiamaka.webp'
 import Musa from '@/assets/images/webps/musa.webp'
 import Obafemi from '@/assets/images/webps/obafemi.webp'
 import Precious from '@/assets/images/webps/precious.webp'
+import BlogCard from '@/components/BlogCard.vue'
 import SectionHeading from '@/components/SectionHeading.vue'
 import StoreBadge from '@/components/StoreBadge.vue'
 import StudentFrame from '@/components/StudentFrame.vue'
 import WhyCard from '@/components/WhyCard.vue'
-import { companies, downloadSteps } from '@/lib/constants'
+import { blogs, companies, downloadSteps } from '@/lib/constants'
 </script>
 
 <template>
@@ -210,6 +211,17 @@ import { companies, downloadSteps } from '@/lib/constants'
           <img src="/src/assets/images/pngs/pay4me-download-mockup.png" alt="" />
         </div>
       </div>
+    </section>
+
+    <!--------------------------- Blogs and Resources section ----------------------------->
+    <section class="bg-[url(@/assets/images/pngs/line-5.png),url(@/assets/images/pngs/line-6.png)] bg-no-repeat bg-position-[100%_-20%,left_60%] grid gap-16 px-12 pt-16 pb-20">
+      <SectionHeading heading="Latest Blogs and Resources" />
+
+      <div class="flex gap-6">
+        <BlogCard v-for="blog in blogs" :key="blog.id" :="blog" />
+      </div>
+
+      <RouterLink to="" class="button-primary grid place-content-center px-10 mx-auto">View More</RouterLink>
     </section>
   </main>
 </template>
