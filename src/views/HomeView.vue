@@ -7,7 +7,7 @@ import SectionHeading from '@/components/SectionHeading.vue'
 import StoreBadge from '@/components/StoreBadge.vue'
 import StudentFrame from '@/components/StudentFrame.vue'
 import WhyCard from '@/components/WhyCard.vue'
-import { companies } from '@/lib/constants'
+import { companies, downloadSteps } from '@/lib/constants'
 </script>
 
 <template>
@@ -68,7 +68,8 @@ import { companies } from '@/lib/constants'
   </header>
 
   <main>
-    <section class="grid gap-16 bg-white px-12 py-16">
+    <!--------------------------- Students section ----------------------------->
+    <section class="grid gap-16 bg-white px-12 pt-16 pb-20">
       <div class="flex justify-center gap-2">
         <img src="/src/assets/images/webps/globe-bg.webp" alt="" class="self-start" />
         <h2 class="text-5xl font-bold">
@@ -91,7 +92,7 @@ import { companies } from '@/lib/constants'
             <img :src="Musa" alt="" />
           </StudentFrame>
           <div
-            class="absolute top-12 size-100 rounded-full bg-linear-[148.79deg,rgba(122,197,45,0.5)_12.9%,rgba(236,135,78,0.5)_29.15%,rgba(173,221,28,0.5)_41.54%,rgba(122,197,45,0.5)_54.7%,rgba(122,197,45,0.5)_70.18%,rgba(122,197,45,0.5)_87.21%] blur-[80px]"
+            class="absolute top-12 size-100 rounded-full bg-linear-[148.79deg,rgba(122,197,45,0.5)_12.9%,rgba(236,135,78,0.5)_29.15%,rgba(173,221,28,0.5)_41.54%,rgba(122,197,45,0.5)_54.7%,rgba(122,197,45,0.5)_70.18%,rgba(122,197,45,0.5)_87.21%] blur-[164px]"
           />
         </div>
 
@@ -106,7 +107,10 @@ import { companies } from '@/lib/constants'
       </div>
     </section>
 
-    <section class="bg-[url(@/assets/images/pngs/line-3.png),url(@/assets/images/pngs/line-4.png)] bg-no-repeat bg-position-[100%_-20%,left_60%] grid gap-16 px-12 py-16">
+    <!--------------------------- Why Pay4Me section ----------------------------->
+    <section
+      class="bg-[url(@/assets/images/pngs/line-3.png),url(@/assets/images/pngs/line-4.png)] bg-no-repeat bg-position-[100%_-20%,left_60%] grid gap-16 px-12 pt-16 pb-20"
+    >
       <SectionHeading heading="Why We Built the Pay4me App" />
 
       <div class="flex gap-4">
@@ -122,7 +126,7 @@ import { companies } from '@/lib/constants'
           </WhyCard>
         </div>
 
-        <div class="flex-3/10 flex flex-col space-y-4">
+        <div class="flex-3/10 flex flex-col gap-4">
           <WhyCard
             heading="To Foster Financial Inclusion"
             description="Pay4Me App makes international payments more accessible to individuals who may not have access to traditional banking services."
@@ -159,7 +163,7 @@ import { companies } from '@/lib/constants'
           </WhyCard>
         </div>
 
-        <div class="flex-3/10 space-y-4">
+        <div class="flex-3/10 flex flex-col gap-4">
           <WhyCard
             heading="To Improve Convenience and Accessibility"
             description="Pay4Me App provides access to payment services anytime, anywhere, making it convenient for users across different time zones."
@@ -178,6 +182,32 @@ import { companies } from '@/lib/constants'
               <img src="/src/assets/images/pngs/padlock.png" alt="" />
             </figure>
           </WhyCard>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------- How to use Pay4Me section ----------------------------->
+    <section class="bg-white pl-12 pt-16">
+      <SectionHeading heading="How to Download and Use the Pay4Me App" class="pr-12" />
+
+      <div class="flex items-center">
+        <div class="flex flex-col gap-12 w-3/5">
+          <h3 class="text-4xl font-bold">
+            Here's a step-by-step guide to downloading the Pay4Me app and getting started:
+          </h3>
+          <ul class="flex flex-col gap-8">
+            <li
+              v-for="{ id, step } in downloadSteps"
+              :key="id"
+              class="border-l-4 border-primary pl-4 text-[1.6875rem] text-foreground/80"
+            >
+              {{ step }}
+            </li>
+          </ul>
+        </div>
+
+        <div class="w-2/5">
+          <img src="/src/assets/images/pngs/pay4me-download-mockup.png" alt="" />
         </div>
       </div>
     </section>

@@ -17,3 +17,12 @@ export const companies = [
   { name: 'providus', logo: Providus },
   { name: 'monnify', logo: Monnify },
 ]
+
+export const downloadSteps = [
+  {
+    id: 1,
+    step: 'Locate the App Store on your device: Open the App Store app for iOS users, and the Google Play Store app for Android users.',
+  },
+  { id: 2, step: 'Download the official Pay4Me app from the App Store or Google Play Store.' },
+  { id: 3, step: 'Open the Pay4Me app and create an account. Then you are ready to go!' },
+]
