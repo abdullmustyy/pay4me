@@ -23,7 +23,7 @@ const toggleAccordion = (index: number) => {
       :key="id"
       class="bg-white relative flex flex-col gap-3 border border-pearl-gray rounded-lg p-6"
       :class="{
-        'before:absolute before:inset-0 before:blur-3xl before:-z-10 before:bg-linear-[148.79deg,rgba(122,197,45,0.5)_12.9%,rgba(236,135,78,0.5)_29.15%,rgba(173,221,28,0.5)_41.54%,rgba(122,197,45,0.5)_54.7%,rgba(122,197,45,0.5)_70.18%,rgba(122,197,45,0.5)_87.21%]':
+        'before:absolute before:inset-10 before:blur-3xl before:-z-10 before:bg-linear-[148.79deg,rgba(122,197,45,0.5)_12.9%,rgba(236,135,78,0.5)_29.15%,rgba(173,221,28,0.5)_41.54%,rgba(122,197,45,0.5)_54.7%,rgba(122,197,45,0.5)_70.18%,rgba(122,197,45,0.5)_87.21%]':
           openIndex === index,
       }"
     >
