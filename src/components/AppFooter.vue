@@ -34,7 +34,7 @@ import { footerLinks, socialLinks } from '@/lib/constants'
           </div>
         </div>
 
-        <div v-for="{ category, links } in footerLinks" :key="category" class="flex flex-col gap-2">
+        <div v-for="{ category, links } in footerLinks" :key="category" class="flex flex-col gap-3.5">
           <h6 class="text-2xl font-medium">{{ category }}</h6>
           <RouterLink v-for="{ name, to } in links" :key="name" :to="to" class="text-2xl">{{
             name
