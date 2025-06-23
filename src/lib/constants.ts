@@ -9,6 +9,12 @@ import Prodigy from '@/assets/images/webps/prodigy.webp'
 import Providus from '@/assets/images/webps/providus.webp'
 import Stripe from '@/assets/images/webps/stripe.webp'
 import Techstars from '@/assets/images/webps/techstars.webp'
+import FacebookOutline from '@/components/icons/FacebookOutline.vue'
+import InstagramOutline from '@/components/icons/InstagramOutline.vue'
+import LinkedInOutline from '@/components/icons/LinkedInOutline.vue'
+import TiktokOutline from '@/components/icons/TiktokOutline.vue'
+import XOutline from '@/components/icons/XOutline.vue'
+import YoutubeOutline from '@/components/icons/YoutubeOutline.vue'
 
 export const companies = [
   { name: 'across', logo: Across },
@@ -96,3 +102,42 @@ export const faqs = [
   },
 ]
 export type { faqs as IFaqs }
+
+export const footerLinks = [
+  {
+    category: 'Company',
+    links: [
+      { name: 'About', to: '' },
+      { name: 'Blog', to: '' },
+      { name: 'FAQs', to: '' },
+      { name: 'Support', to: '' },
+    ],
+  },
+  {
+    category: 'Legal',
+    links: [
+      { name: 'Terms of Service', to: '' },
+      { name: 'Order Cancellation Policy', to: '' },
+      { name: 'Privacy Policy', to: '' },
+      { name: 'KYC/AML Policy', to: '' },
+    ],
+  },
+  {
+    category: 'Resources',
+    links: [
+      { name: 'Android Reviews', to: '' },
+      { name: 'IOS Reviews', to: '' },
+      { name: 'Jobs', to: '' },
+      { name: 'Testimonials.to', to: '' },
+    ],
+  },
+]
+
+export const socialLinks = [
+  { name: 'Facebook', icon: FacebookOutline, to: '' },
+  { name: 'Instagram', icon: InstagramOutline, to: '' },
+  { name: 'LinkedIn', icon: LinkedInOutline, to: '' },
+  { name: 'TikTok', icon: TiktokOutline, to: '' },
+  { name: 'X', icon: XOutline, to: '' },
+  { name: 'YouTube', icon: YoutubeOutline, to: '' },
+]
