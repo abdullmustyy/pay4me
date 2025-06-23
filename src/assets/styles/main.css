@@ -17,6 +17,8 @@
   --pale-lime: #E3F0AF;
   --cool-gray: #AAAAAA;
   --cloud-gray: #DEDEDE;
+  --midnight-blue: #071A34;
+  --pearl-gray: #EAEAEA;
 
   --ease-1: cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -35,6 +37,8 @@
   --color-pale-lime: var(--pale-lime);
   --color-cool-gray: var(--cool-gray);
   --color-cloud-gray: var(--cloud-gray);
+  --color-midnight-blue: var(--midnight-blue);
+  --color-pearl-gray: var(--pearl-gray);
 
   --ease-1: var(--ease-1);
 
@@ -43,7 +47,7 @@
 
 @layer base {
   body {
-    @apply bg-icy-blue text-foreground select-none;
+    @apply bg-white text-foreground select-none;
   }
 
   /* img {

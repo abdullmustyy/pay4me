@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <nav class="px-12 flex items-center justify-between h-30">
+  <nav class="bg-icy-blue px-12 flex items-center justify-between h-30">
     <RouterLink to="/">
       <img src="@/assets/images/webps/logo.webp" alt="Logo" class="h-20" />
     </RouterLink>

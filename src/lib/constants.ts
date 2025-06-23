@@ -62,3 +62,37 @@ export const blogs = [
     link: '',
   },
 ]
+
+export const faqs = [
+  {
+    id: 1,
+    question: 'What is the Pay4Me App?',
+    answer:
+      'Pay4Me App is a platform that helps people across Africa complete cross-border payments services. Our core payment industry includes helping with payments to government and immigration agencies, colleges, universities, businesses, and organizations abroad.',
+  },
+  {
+    id: 2,
+    question: 'How does the Pay4Me App work?',
+    answer:
+      'The Pay4Me App works by allowing users to create an account, select the service they need, and follow the prompts to complete their payment. The app provides a secure and user-friendly interface for managing cross-border payments.',
+  },
+  {
+    id: 3,
+    question: 'What is the payment processing timeline on the Pay4Me App?',
+    answer:
+      'The payment processing timeline on the Pay4Me App varies depending on the type of payment and the recipients bank. Generally, payments are processed within 1-3 business days, but some transactions may take longer due to factors such as bank processing times and international regulations.',
+  },
+  {
+    id: 4,
+    question: 'How do i get started using the Pay4Me App?',
+    answer:
+      'To get started using the Pay4Me App, download the app from the App Store or Google Play Store, create an account, and follow the prompts to set up your profile. Once your profile is set up, you can start making payments.',
+  },
+  {
+    id: 5,
+    question: 'Who can use the Pay4Me App?',
+    answer:
+      'The Pay4Me App is designed for individuals and businesses across Africa who need to make cross-border payments. Whether you are a student paying tuition fees, a business making international transactions, or an individual sending money abroad, the Pay4Me App can help you complete your payments securely and efficiently.',
+  },
+]
+export type { faqs as IFaqs }

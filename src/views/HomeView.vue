@@ -3,17 +3,18 @@ import Chiamaka from '@/assets/images/webps/chiamaka.webp'
 import Musa from '@/assets/images/webps/musa.webp'
 import Obafemi from '@/assets/images/webps/obafemi.webp'
 import Precious from '@/assets/images/webps/precious.webp'
+import AppAccordion from '@/components/AppAccordion.vue'
 import BlogCard from '@/components/BlogCard.vue'
 import SectionHeading from '@/components/SectionHeading.vue'
 import StoreBadge from '@/components/StoreBadge.vue'
 import StudentFrame from '@/components/StudentFrame.vue'
 import WhyCard from '@/components/WhyCard.vue'
-import { blogs, companies, downloadSteps } from '@/lib/constants'
+import { blogs, companies, downloadSteps, faqs } from '@/lib/constants'
 </script>
 
 <template>
   <header
-    class="bg-[url(@/assets/images/webps/line-1.webp),url(@/assets/images/webps/line-2.webp)] bg-no-repeat bg-position-[top_right,left_60%] grid gap-16 pt-8 pb-10"
+    class="bg-icy-blue bg-[url(@/assets/images/webps/line-1.webp),url(@/assets/images/webps/line-2.webp)] bg-no-repeat bg-position-[top_right,left_60%] grid gap-16 pt-8 pb-10"
   >
     <div
       class="bg-yellow-green/16 w-fit mx-auto rounded-2xl flex items-center gap-3.5 h-12 px-5 py-4 border border-primary border-dashed"
@@ -70,7 +71,7 @@ import { blogs, companies, downloadSteps } from '@/lib/constants'
 
   <main>
     <!--------------------------- Students section ----------------------------->
-    <section class="grid gap-16 bg-white px-12 pt-16 pb-20">
+    <section class="grid gap-16 px-12 pt-16 pb-20">
       <div class="flex justify-center gap-2">
         <img src="/src/assets/images/webps/globe-bg.webp" alt="" class="self-start" />
         <h2 class="text-5xl font-bold">
@@ -110,7 +111,7 @@ import { blogs, companies, downloadSteps } from '@/lib/constants'
 
     <!--------------------------- Why Pay4Me section ----------------------------->
     <section
-      class="bg-[url(@/assets/images/pngs/line-3.png),url(@/assets/images/pngs/line-4.png)] bg-no-repeat bg-position-[100%_-20%,left_60%] grid gap-16 px-12 pt-16 pb-20"
+      class="bg-icy-blue bg-[url(@/assets/images/pngs/line-3.png),url(@/assets/images/pngs/line-4.png)] bg-no-repeat bg-position-[100%_-20%,left_60%] grid gap-16 px-12 pt-16 pb-20"
     >
       <SectionHeading heading="Why We Built the Pay4me App" />
 
@@ -188,7 +189,7 @@ import { blogs, companies, downloadSteps } from '@/lib/constants'
     </section>
 
     <!--------------------------- How to use Pay4Me section ----------------------------->
-    <section class="bg-white pl-12 pt-16">
+    <section class="pl-12 pt-16">
       <SectionHeading heading="How to Download and Use the Pay4Me App" class="pr-12" />
 
       <div class="flex items-center">
@@ -200,7 +201,7 @@ import { blogs, companies, downloadSteps } from '@/lib/constants'
             <li
               v-for="{ id, step } in downloadSteps"
               :key="id"
-              class="border-l-4 border-primary pl-4 text-[1.6875rem] text-foreground/80"
+              class="border-l-4 border-primary pl-4 text-[1.6rem] text-foreground/80"
             >
               {{ step }}
             </li>
@@ -214,14 +215,27 @@ import { blogs, companies, downloadSteps } from '@/lib/constants'
     </section>
 
     <!--------------------------- Blogs and Resources section ----------------------------->
-    <section class="bg-[url(@/assets/images/pngs/line-5.png),url(@/assets/images/pngs/line-6.png)] bg-no-repeat bg-position-[100%_-20%,left_60%] grid gap-16 px-12 pt-16 pb-20">
+    <section
+      class="bg-icy-blue bg-[url(@/assets/images/pngs/line-5.png),url(@/assets/images/pngs/line-6.png)] bg-no-repeat bg-position-[100%_-20%,left_60%] grid gap-16 px-12 pt-16 pb-20"
+    >
       <SectionHeading heading="Latest Blogs and Resources" />
 
       <div class="flex gap-6">
         <BlogCard v-for="blog in blogs" :key="blog.id" :="blog" />
       </div>
 
-      <RouterLink to="" class="button-primary grid place-content-center px-10 mx-auto">View More</RouterLink>
+      <RouterLink to="" class="button-primary grid place-content-center px-10 mx-auto"
+        >View More</RouterLink
+      >
+    </section>
+
+    <!--------------------------- FAQs section ----------------------------->
+    <section class="grid gap-16 pt-16 pb-20">
+      <SectionHeading heading="FAQs" />
+
+      <AppAccordion :items="faqs" class="w-3/5 mx-auto" />
+
+      <p class="text-2xl font-medium text-center">Have more questions? <RouterLink to="" class="text-primary underline underline-offset-2">See the full FAQ</RouterLink></p>
     </section>
   </main>
 </template>
