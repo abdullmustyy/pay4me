@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import AppStore from '@/assets/images/pngs/app-store.png'
+import GooglePlay from '@/assets/images/pngs/google-play.png'
+import QRCodeMockup from '@/assets/images/pngs/pay4me-qrcode-mockup.png'
+import QRCode from '@/assets/images/pngs/qr-code.png'
+import GeometricCirclePoint from '@/assets/images/svgs/geometric-shape-circle-point-target.svg'
 import Chiamaka from '@/assets/images/webps/chiamaka.webp'
 import Musa from '@/assets/images/webps/musa.webp'
 import Obafemi from '@/assets/images/webps/obafemi.webp'
@@ -235,7 +240,39 @@ import { blogs, companies, downloadSteps, faqs } from '@/lib/constants'
 
       <AppAccordion :items="faqs" class="w-3/5 mx-auto" />
 
-      <p class="text-2xl font-medium text-center">Have more questions? <RouterLink to="" class="text-primary underline underline-offset-2">See the full FAQ</RouterLink></p>
+      <p class="text-2xl font-medium text-center">
+        Have more questions?
+        <RouterLink to="" class="text-primary underline underline-offset-2"
+          >See the full FAQ</RouterLink
+        >
+      </p>
+    </section>
+
+    <!--------------------------- Download Pay4Me section ----------------------------->
+    <section class="bg-icy-blue px-12 pt-20 pb-16">
+      <div class="bg-[url(@/assets/images/svgs/geometric-shape-circle-top-target.svg),url(@/assets/images/svgs/geometric-shape-circle-bottom-target.svg)] bg-no-repeat bg-position-[left_top,left_bottom] flex items-center gap-13 bg-primary rounded-[1.25rem] py-6 pl-20 pr-5">
+        <div class="flex flex-col gap-3 text-white">
+          <h2 class="text-5xl font-bold">Download the Pay4Me App</h2>
+          <p class="text-2xl font-medium">
+            Our custom QR code will take you to your app store to download our awesome native apps
+          </p>
+          <div class="flex items-center gap-3 mt-6">
+            <RouterLink to="">
+              <img :src="AppStore" alt="" />
+            </RouterLink>
+            <RouterLink to="">
+              <img :src="GooglePlay" alt="" />
+            </RouterLink>
+          </div>
+        </div>
+
+        <img :src="QRCode" alt="" />
+
+        <div class="shrink-0 relative flex items-center">
+          <img :src="QRCodeMockup" alt="" class="z-10" />
+          <img :src="GeometricCirclePoint" alt="" class="absolute -translate-x-1/5" />
+        </div>
+      </div>
     </section>
   </main>
 </template>
