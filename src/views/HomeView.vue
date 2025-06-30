@@ -226,7 +226,7 @@ import { blogs, companies, downloadSteps, faqs } from '@/lib/constants'
       <SectionHeading heading="Latest Blogs and Resources" />
 
       <div class="flex gap-6">
-        <BlogCard v-for="blog in blogs" :key="blog.id" :="blog" />
+        <BlogCard v-for="blog in blogs" :key="blog.id" v-bind="blog" class="flex-1" />
       </div>
 
       <RouterLink to="" class="button-primary grid place-content-center px-10 mx-auto"
