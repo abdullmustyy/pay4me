@@ -43,8 +43,8 @@ import { footerLinks, socialLinks } from '@/lib/constants'
       </div>
     </section>
 
-    <figure>
-      <img :src="FooterPills" alt="" />
+    <figure class="pointer-events-none w-full">
+      <img :src="FooterPills" alt="" class="w-full" />
     </figure>
   </footer>
 </template>
