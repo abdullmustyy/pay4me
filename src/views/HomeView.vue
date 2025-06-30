@@ -137,16 +137,16 @@ import { blogs, companies, downloadSteps, faqs } from '@/lib/constants'
           <WhyCard
             heading="To Foster Financial Inclusion"
             description="Pay4Me App makes international payments more accessible to individuals who may not have access to traditional banking services."
-            class="bg-tangerine/10 gap-8 min-h-fit"
+            class="bg-tangerine/10 gap-8 flex-11/20"
           >
-            <figure>
-              <img src="/src/assets/images/pngs/tranfer.png" alt="" />
+            <figure class="w-full">
+              <img src="/src/assets/images/pngs/tranfer.png" alt="" class="size-full" />
             </figure>
           </WhyCard>
           <WhyCard
             heading="Bridging Geographical Boundaries"
             description="Pay4Me app connects students and institutions across borders, enabling seamless payment flows regardless of location."
-            class="bg-pale-lime/10 h-full"
+            class="bg-pale-lime/10 flex-9/20"
           >
             <div class="size-full relative flex items-center justify-center">
               <img src="/src/assets/images/pngs/canada.png" alt="" class="absolute top-6 left-12" />
@@ -174,7 +174,7 @@ import { blogs, companies, downloadSteps, faqs } from '@/lib/constants'
           <WhyCard
             heading="To Improve Convenience and Accessibility"
             description="Pay4Me App provides access to payment services anytime, anywhere, making it convenient for users across different time zones."
-            class="bg-spring-green/10"
+            class="bg-spring-green/10 flex-9/20"
           >
             <figure class="ml-auto">
               <img src="/src/assets/images/pngs/atom.png" alt="" />
@@ -183,7 +183,7 @@ import { blogs, companies, downloadSteps, faqs } from '@/lib/constants'
           <WhyCard
             heading="To enhance security and trust"
             description="Pay4Me app prioritizes user security by integrating with industry-leading payment gateways like Stripe and PayPal. These gateways employ robust security measures, including encryption, tokenization, and sophisticated fraud detection systems."
-            class="bg-creame-white"
+            class="bg-creame-white flex-11/20"
           >
             <figure class="ml-auto">
               <img src="/src/assets/images/pngs/padlock.png" alt="" />
